@@ -71,6 +71,11 @@ main .wrapper .feature-selection {
     justify-content: center;
     align-items: center;
 }
+main .wrapper .feature-selection h1{
+    position: absolute;
+    top: 0;
+    font-size: 2vw;
+}
 
 main .wrapper .feature-selection .feature-wrapper{
     display: flex;
