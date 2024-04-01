@@ -3,16 +3,21 @@ main {
 
 }
 
-main .wrapper {}
+main .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-main .wrapper>div {
-    width: 100%;
+}
+
+main .wrapper > div {
+    width:100%;
     padding-top: calc((100vw - 4.7vw) * 0.618);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 main .wrapper div .overlay {
@@ -40,7 +45,6 @@ main .wrapper div > div {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 main .wrapper div #welcome-wrapper,
@@ -54,8 +58,6 @@ main .wrapper div #welcome-wrapper,
 main .wrapper div #history {
     background-color: red;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
     gap: 16px;
 }
@@ -63,5 +65,31 @@ main .wrapper div #history {
 
 main .wrapper .feature-selection {
     background-color: aqua;
-    padding-top: calc(20vw);
+    padding-top: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .wrapper .feature-selection .feature-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 1.667vw;
+}
+
+main .wrapper .feature-selection  .feature-wrapper .feature-item{
+    border: 1px solid black;
+    width: 10.417vw;
+    height: 10.417vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+main .wrapper .feature-selection  .feature-wrapper a:hover{
+    background-color: rgba(139, 33, 33, 1);
+    color: white;
 }
