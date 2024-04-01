@@ -1,0 +1,67 @@
+main {
+    /*margin-top: 4.7vw;*/
+
+}
+
+main .wrapper {}
+
+main .wrapper>div {
+    width: 100%;
+    padding-top: calc((100vw - 4.7vw) * 0.618);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .wrapper div .overlay {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .wrapper div > div {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .wrapper div #welcome-wrapper,
+#welcome-text {
+    background-color: transparent;
+    color: white;
+    font-size: 4vw;
+}
+
+
+main .wrapper div #history {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+}
+
+
+main .wrapper .feature-selection {
+    background-color: aqua;
+    padding-top: calc(20vw);
+}
