@@ -8,8 +8,33 @@
     <link rel="stylesheet" href="styles/all.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/styles.css">
-  
+
 </head>
+<style>
+    #mission-vision-values {
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    #mission-vision-values section {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid black;
+        font-size: 1.667vw;
+        padding: 1.667vw;
+    }
+</style>
 
 <body>
     <nav>
@@ -28,8 +53,6 @@
     </nav>
     <main>
         <div class="wrapper">
-
-
             <div style="
                 background-image: url('images/splash-art-1.png'); 
                 background-size: cover;
@@ -43,7 +66,6 @@
                             excellence knows no bounds.</h1>
                     </div>
                 </div>
-
             </div>
 
 
@@ -65,17 +87,28 @@
                     <a class="feature-item"></a>
                     <button onclick="next()">RIGHT</button>
                 </div>
-
-
             </div>
 
-            <div>
-                <img src="" alt="" />
+            <div id="mission-vision-values">
+                <section>
+                    <h1>Mission</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean est augue, ullamcorper vitae
+                        metus sit amet, ullamcorper dictum purus. In felis tellus, faucibus a ultrices mollis, finibus a
+                        mauris. Quisque tempor mauris ultrices ante volutpat, non ornare risus ullamcorper.</p>
+                    <h1>Vision</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean est augue, ullamcorper vitae
+                        metus sit amet, ullamcorper dictum purus. In felis tellus, faucibus a ultrices mollis, finibus a
+                        mauris. Quisque tempor mauris ultrices ante volutpat, non ornare risus ullamcorper.</p>
+                    <h1>Values</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean est augue, ullamcorper vitae
+                        metus sit amet, ullamcorper dictum purus. In felis tellus, faucibus a ultrices mollis, finibus a
+                        mauris. Quisque tempor mauris ultrices ante volutpat, non ornare risus ullamcorper.</p>
+                </section>
             </div>
 
 
             <div>
-                <img src="" alt="" />
+
             </div>
 
 
@@ -89,8 +122,6 @@
 
 
             <div></div>
-
-
 
         </div>
     </main>
@@ -123,7 +154,7 @@
 
     function drawImage(array) {
         for (let i = 0; i < collection.length; i++) {
-            collection[i].style.backgroundImage = "url(" +  images[i] + ")";
+            collection[i].style.backgroundImage = "url(" + images[i] + ")";
         }
     }
 </script>
