@@ -92,6 +92,9 @@ main .wrapper .feature-selection  .feature-wrapper .feature-item{
     align-items: center;
     font-size: 2vw;
     cursor: pointer;
+    background-image: url('/images/profile-circle.svg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
 }
 
 main .wrapper .feature-selection  .feature-wrapper a:hover{

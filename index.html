@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/all.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/styles.css">
+  
 </head>
 
 <body>
@@ -57,12 +58,12 @@
             <div class="feature-selection">
                 <h1>Feature Academics</h1>
                 <div class="feature-wrapper">
-                    <button onclick="">LEFT</button>
-                    <a class="feature-item">Test 1</a>
-                    <a class="feature-item">Test 2</a>
-                    <a class="feature-item">Test 3</a>
-                    <a class="feature-item">Test 4</a>
-                    <button>RIGHT</button>
+                    <button onclick="prev()">LEFT</button>
+                    <a class="feature-item"></a>
+                    <a class="feature-item"></a>
+                    <a class="feature-item"></a>
+                    <a class="feature-item"></a>
+                    <button onclick="next()">RIGHT</button>
                 </div>
 
 
@@ -95,5 +96,36 @@
     </main>
     <footer></footer>
 </body>
+<script>
+    let images = ["images/1.png", "images/2.webp", "images/3.avif", "images/4.jpg"];
+    let collection = document.getElementsByClassName("feature-item");
+
+    drawImage(images);
+
+    function next() {
+        let head = images[0];
+        for (let i = 0; i < images.length - 1; i++) {
+            images[i] = images[i + 1];
+        }
+        images[images.length - 1] = head;
+        console.log(images);
+        drawImage(images);
+    }
+    function prev() {
+        let tail = images[images.length - 1];
+        for (let i = images.length - 1; i >= 0; i--) {
+            images[i] = images[i - 1];
+        }
+        images[0] = tail;
+        console.log(images);
+        drawImage(images);
+    }
+
+    function drawImage(array) {
+        for (let i = 0; i < collection.length; i++) {
+            collection[i].style.backgroundImage = "url(" +  images[i] + ")";
+        }
+    }
+</script>
 
 </html>
