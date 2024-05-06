@@ -58,8 +58,13 @@ main .wrapper div #welcome-wrapper,
 main .wrapper div #history {
     background-color: red;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 16px;
+}
+
+main .wrapper div #history{
+    padding: 2vw;
+    font-size: 1.5vw;
 }
 
 
