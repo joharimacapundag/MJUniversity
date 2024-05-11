@@ -12,13 +12,32 @@ main .wrapper {
 }
 
 main .wrapper > div {
-    width:100%;
+    width: 100%;
     padding-top: calc((100vw - 4.7vw) * 0.618);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+main .wrapper div > div{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo-gallery-wrapper{
+    width: 50%;
+    height: 100px;
+    border: 1px solid black;
+}
+
 
 main .wrapper div .overlay {
     position: absolute;
@@ -33,18 +52,6 @@ main .wrapper div .overlay {
     justify-content: center;
     align-items: center;
 
-}
-
-main .wrapper div > div {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 main .wrapper div #welcome-wrapper,
@@ -62,7 +69,7 @@ main .wrapper div #history {
     gap: 16px;
 }
 
-main .wrapper div #history{
+main .wrapper div #history {
     padding: 2vw;
     font-size: 1.5vw;
 }
@@ -76,19 +83,20 @@ main .wrapper .feature-selection {
     justify-content: center;
     align-items: center;
 }
-main .wrapper .feature-selection h1{
+
+main .wrapper .feature-selection h1 {
     position: absolute;
     top: 0;
     font-size: 2vw;
 }
 
-main .wrapper .feature-selection .feature-wrapper{
+main .wrapper .feature-selection .feature-wrapper {
     display: flex;
     flex-direction: row;
     gap: 1.667vw;
 }
 
-main .wrapper .feature-selection  .feature-wrapper .feature-item{
+main .wrapper .feature-selection .feature-wrapper .feature-item {
     border: 1px solid black;
     width: 10.417vw;
     height: 10.417vw;
@@ -97,12 +105,28 @@ main .wrapper .feature-selection  .feature-wrapper .feature-item{
     align-items: center;
     font-size: 2vw;
     cursor: pointer;
-    background-image: url('/images/profile-circle.svg'); 
-    background-repeat: no-repeat; 
+    background-image: url('/images/profile-circle.svg');
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
-main .wrapper .feature-selection  .feature-wrapper a:hover{
+main .wrapper .feature-selection .feature-wrapper a:hover {
     background-color: rgba(139, 33, 33, 1);
     color: white;
+}
+
+main .wrapper #gallery .photo-gallery .photo-gallery-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 0.208vw;
+    row-gap: 0;
+}
+main .wrapper #gallery .photo-gallery .photo-gallery-wrapper img{
+    width: calc( 4.219vw * 3.618); 
+    height:calc(7.5vw * 3.618 ) ;
 }
