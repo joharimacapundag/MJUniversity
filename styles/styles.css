@@ -130,3 +130,12 @@ main .wrapper #gallery .photo-gallery .photo-gallery-wrapper img{
     width: calc( 4.219vw * 3.618); 
     height:calc(7.5vw * 3.618 ) ;
 }
+
+.enroll-content{
+    background-color: aqua;
+    padding-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

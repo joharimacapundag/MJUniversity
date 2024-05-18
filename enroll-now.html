@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University School Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+
+    .back-button {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 10px 15px;
+        background-color: #007BFF;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .back-button:hover {
+        background-color: #0056b3;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form h2 {
+        margin-bottom: 20px;
+        color: #333;
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+    }
+
+    .form-group input,
+    .form-group select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .form-group input[type="radio"],
+    .form-group input[type="checkbox"] {
+        width: auto;
+        margin-right: 10px;
+    }
+
+    .form-group div {
+        display: flex;
+        align-items: center;
+    }
+
+    .form-group button {
+        padding: 10px;
+        border: none;
+        background-color: #007BFF;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .form-group button:hover {
+        background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+        .form h2 {
+            font-size: 24px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group button {
+            font-size: 14px;
+        }
+    }
+</style>
+
+<body>
+    <a href="index.html" class="back-button">Back to Home</a>
+    <div class="container">
+        
+        <form class="form">
+            <h2>University School Application Form</h2>
+
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="degree">Highest Degree Obtained</label>
+                <select id="degree" name="degree" required>
+                    <option value="" disabled selected>Select your degree</option>
+                    <option value="high-school">High School</option>
+                    <option value="associate">Associate Degree</option>
+                    <option value="bachelor">Bachelor's Degree</option>
+                    <option value="master">Master's Degree</option>
+                    <option value="doctorate">Doctorate</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="major">Major</label>
+                <input type="text" id="major" name="major" required>
+            </div>
+
+            <div class="form-group">
+                <label for="study-mode">Preferred Mode of Study</label>
+                <div>
+                    <input type="radio" id="full-time" name="study-mode" value="full-time" required>
+                    <label for="full-time">Full-time</label>
+                </div>
+                <div>
+                    <input type="radio" id="part-time" name="study-mode" value="part-time" required>
+                    <label for="part-time">Part-time</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="courses">Courses Interested In</label>
+                <div>
+                    <input type="checkbox" id="course1" name="courses" value="course1">
+                    <label for="course1">Course 1</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="course2" name="courses" value="course2">
+                    <label for="course2">Course 2</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="course3" name="courses" value="course3">
+                    <label for="course3">Course 3</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit Application</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

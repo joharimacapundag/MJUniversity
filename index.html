@@ -31,6 +31,19 @@
         padding: 20px;
         box-sizing: border-box;
     }
+    .enroll-button {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 10px 15px;
+        background-color: #007BFF;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .enroll-button:hover {
+        background-color: #0056b3;
+    }
 </style>
 
 <body>
@@ -66,44 +79,6 @@
             </div>
 
 
-            <div>
-                <div id="history">
-                    <h1>History</h1>
-                    <p>
-                        The University of Dominion traces its origins back to ancient times, emerging from the shadows
-                        of history as a clandestine institution dedicated to the pursuit of power, dominance, and
-                        control. While the exact details of its founding are shrouded in mystery and legend, it is
-                        believed that the university's roots can be traced to secretive societies and esoteric orders
-                        that sought to harness the forces of strength and influence for their own ends.<br><Br>
-
-                        Throughout the ages, the University of Dominion has operated in the shadows, its existence known
-                        only to a select few who are deemed worthy of its teachings. It has weathered the rise and fall
-                        of empires, survived wars and revolutions, and adapted to the changing tides of history, always
-                        maintaining its singular focus on the cultivation of power in all its forms.<br><Br>
-
-                        Over time, the university has evolved into a prestigious institution revered by those who seek
-                        to ascend to positions of authority, influence, and mastery. Its faculty consists of renowned
-                        experts, practitioners, and scholars in fields ranging from combat arts and dark manipulation to
-                        strategic leadership and arcane studies.<br><Br>
-
-                        Despite its secretive nature, the University of Dominion has occasionally surfaced in historical
-                        records and folklore, its name whispered in hushed tones by those who dare to seek its forbidden
-                        knowledge. Tales of its alumni, known for their prowess in battle, mastery of dark arts, and
-                        strategic cunning, have become the stuff of legend, inspiring awe and fear in equal
-                        measure.<br><Br>
-
-                        In the modern era, the University of Dominion operates discreetly, its campus hidden from prying
-                        eyes and its activities shielded from public scrutiny. Yet, for those who possess the ambition
-                        and determination to seek it out, the university offers unparalleled opportunities for growth,
-                        enlightenment, and empowerment.<br><Br>
-
-                        As the world teeters on the brink of chaos and uncertainty, the University of Dominion stands as
-                        a bastion of strength and stability, guiding its students on a path to greatness and ensuring
-                        that the forces of power and dominance remain firmly in their grasp.<br><Br>
-                    </p>
-                </div>
-            </div>
-
 
             <div class="feature-selection">
                 <h1>Feature Academics</h1>
@@ -130,28 +105,25 @@
                         Our graduates will lead this new world, using their smarts and strength to bend reality to their
                         will.</p>
                     <h1>Values</h1>
-                    <p>1. <strong>Dominance</strong>: We believe in being the strongest, because that's how you win in
+                    <p><strong>Dominance</strong> <br>We believe in being the strongest, because that's how you win in
                         life. We teach you
                         to be powerful so you can control your destiny.
                         <br><br>
-                        2. <strong>Ruthlessness</strong>: Sometimes being nice gets you nowhere. We show you how to be
+                        <strong>Ruthlessness</strong> <br>Sometimes being nice gets you nowhere. We show you how to be
                         tough and make the
                         tough choices, no matter what.
                         <br><br>
-                        3. <strong>Mastery</strong>: We expect you to be the best at everything you do. We push you to
+                        <strong>Mastery</strong> <br>We expect you to be the best at everything you do. We push you to
                         be better every
                         day, so you can conquer any challenge that comes your way.
                         <br><br>
-                        4. <strong>Ambition</strong>: Dream big, because there are no limits here. We encourage you to
+                        <strong>Ambition</strong> <br>Dream big, because there are no limits here. We encourage you to
                         reach for the
                         stars and never settle for less.
                         <br><br>
-                        5. <strong>Loyalty</strong>: Stick with us, and we'll help you reach the top. We're all in this
+                        <strong>Loyalty</strong><br> Stick with us, and we'll help you reach the top. We're all in this
                         together, working
                         towards the same goal of being the best.
-                        <br><br>
-                        At the University of Dominion, we're all about power and winning. Join us, and become the ruler
-                        of your own destiny.
                     </p>
                 </section>
             </div>
@@ -173,18 +145,97 @@
                     </section>
                 </div>
             </div>
+            <div class="feature-selection">
+                <h1>Feature Events And Programs</h1>
+                <div class="feature-wrapper">
+                    <button onclick="prev()">LEFT</button>
+                    <a class="feature-item"></a>
+                    <a class="feature-item"></a>
+                    <a class="feature-item"></a>
+                    <a class="feature-item"></a>
+                    <button onclick="next()">RIGHT</button>
+                </div>
+            </div>
 
+            <div id="teachers-and-deans">
+                <div style="border: 1px solid black; display: flex; flex-direction: row;">
+                    <section
+                        style="width: 50%; height: 100%; background-image: url('images/student.jpeg'); background-size:cover; background-repeat: no-repeat;">
 
-            <div>
+                    </section>
+                    <section
+                        style=" width: 50%; height: 100%; background-color: red; display: flex; flex-direction: column; padding: 32px; align-items: center;">
+                        <h1 style="font-size: 2.5vw;">Title</h1>
+                        <div style="display: flex; flex-direction: column; gap: 64px; font-size: 18px;">
+                            <section style="display: flex; justify-content: center; align-items: center; gap: 16px;">
+                                <img src="" alt="" width="50px" height="50px">
+                                <p>
+                                    Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
+                                    semper
+
+                                </p>
+                            </section>
+                            <section style="display: flex; justify-content: center; align-items: center; gap: 16px;">
+                                <img src="" alt="" width="50px" height="50px">
+                                <p>
+                                    Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
+                                    semper
+
+                                </p>
+                            </section>
+                            <section style="display: flex; justify-content: center; align-items: center; gap: 16px;">
+                                <img src="" alt="" width="50px" height="50px">
+                                <p>
+                                    Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
+                                    semper
+
+                                </p>
+                            </section>
+                            <section style="display: flex; justify-content: center; align-items: center; gap: 16px;">
+                                <img src="" alt="" width="50px" height="50px">
+                                <p>
+                                    Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
+                                    semper
+
+                                </p>
+                            </section>
+                            <section style="display: flex; justify-content: center; align-items: center; gap: 16px;">
+                                <img src="" alt="" width="50px" height="50px">
+                                <p>
+                                    Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
+                                    semper
+
+                                </p>
+                            </section>
+                            <section style="display: flex; justify-content: center; align-items: center; gap: 16px;">
+                                <img src="" alt="" width="50px" height="50px">
+                                <p>
+                                    Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
+                                    semper
+
+                                </p>
+                            </section>
+                            <section style="display: flex; justify-content: center; align-items: center; gap: 16px;">
+                                <img src="" alt="" width="50px" height="50px">
+                                <p>
+                                    Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
+                                    semper
+
+                                </p>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+
             </div>
 
 
-            <div>
-                <img src="" alt="" />
+
+            <div > 
+                <div style="height: 25vw; border: 1px solid black;">
+                    <a href="enroll-now.html" class="enroll-button">ENROLL NOW</a>
+                </div>
             </div>
-
-
-            <div></div>
 
         </div>
     </main>
