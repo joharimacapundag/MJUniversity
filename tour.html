@@ -7,37 +7,24 @@
     <title>University of Dominion</title>
     <link rel="stylesheet" href="styles/all.css">
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 <style>
-    main {
-        margin-top: 4.7vw;
-    }
-
-    main .wrapper {}
-
-    main .wrapper div {
-        width: 100%;
-        padding-top: calc((100vw - 4.7vw) * 0.618);
-    }
-
-    main .wrapper :nth-child(odd) {
-        background-color: blue;
-    }
-
-    main .wrapper :nth-child(even) {
-        background-color: lightblue;
-    }
-
-    main .wrapper .feature-selection {
-        background-color: aqua;
-        padding-top: calc(20vw);
+    .background-image {
+        background-image: url('images/student.jpeg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 </style>
+
 <body>
     <nav>
         <div class="nav-wrapper">
             <a href="index.html" class="logo-container">
-                <div ></div>
+                <div></div>
                 <h5>Macapundag Johari University</h5>
             </a>
             <div class="nav-items">
@@ -50,29 +37,63 @@
     </nav>
     <main>
         <div class="wrapper">
-            <div>
+            <div class="background-image">
+                <div class="overlay">
+                    <div id="welcome-wrapper">
+                        <h1 id="welcome-text">Cultivating power, forging dominion, where strength reigns supreme, and
+                            excellence knows no bounds.</h1>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="" alt="" />
+            
+            
+            <div style="border: 1px solid black;"></div>
+            <div class="background-image">
+                <div class="overlay">
+                    <div id="welcome-wrapper">
+                        <h1 id="welcome-text">Cultivating power, forging dominion, where strength reigns supreme, and
+                            excellence knows no bounds.</h1>
+                    </div>
+                </div>
             </div>
-            <div class="feature-selection">
-
-            </div>
-            <div>
-                <img src="" alt="" />
-            </div>
-            <div>
-                <img src="" alt="" />
-            </div>
-            <div class="feature-selection">
-            </div>
-            <div>
-                <img src="" alt="" />
-            </div>
-            <div></div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>123 University St., City, State, 12345</li>
+                    <li>Phone: (123) 456-7890</li>
+                    <li>Email: info@university.edu</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Social Media</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col copyright">
+                <p>&copy; 2024 University Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

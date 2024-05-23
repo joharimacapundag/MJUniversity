@@ -8,43 +8,87 @@
     <link rel="stylesheet" href="styles/all.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        #mission-vision-values {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: auto;
+            padding: 20px;
+        }
 
+        #mission-vision-values section {
+            width: 100%;
+            max-width: 75vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 1.667vw;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .enroll-button {
+            display: flex;
+            width: 25vw;
+            height: 5vw;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        .enroll-button:hover {
+            background-color: #0056b3;
+        }
+
+        .background-image {
+            background-image: url('images/student.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .overlay {}
+
+        .photo-gallery-wrapper img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #teachers-and-deans section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+        }
+
+        #teachers-and-deans img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .feature-wrapper button {
+            cursor: pointer;
+        }
+
+        .full-width-section {
+            border: 1px solid black;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
 </head>
-<style>
-    #mission-vision-values {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        height: auto;
-        padding: 20px;
-    }
-
-    #mission-vision-values section {
-        width: 100%;
-        max-width: 75vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: 1.667vw;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-    .enroll-button {
-        display: inline-block;
-        margin-bottom: 20px;
-        padding: 10px 15px;
-        background-color: #007BFF;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-
-    .enroll-button:hover {
-        background-color: #0056b3;
-    }
-</style>
 
 <body>
     <nav>
@@ -63,13 +107,7 @@
     </nav>
     <main>
         <div class="wrapper">
-            <div style="
-                background-image: url('images/student.jpeg'); 
-                background-size: cover;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;">
-
+            <div class="background-image">
                 <div class="overlay">
                     <div id="welcome-wrapper">
                         <h1 id="welcome-text">Cultivating power, forging dominion, where strength reigns supreme, and
@@ -77,8 +115,6 @@
                     </div>
                 </div>
             </div>
-
-
 
             <div class="feature-selection">
                 <h1>Feature Academics</h1>
@@ -95,39 +131,34 @@
             <div id="mission-vision-values">
                 <section>
                     <h1>Mission</h1>
-                    <p>Welcome to the Macapundag Johari’s University, where power rules supreme. Our goal is simple: to
+                    <p style="text-align: justify;">Welcome to the Macapundag Johari’s University, where power rules supreme. Our goal is simple: to
                         make you strong, cunning, and unbeatable. We train you to be the best, no matter what it takes.
                         Through tough lessons in fighting, manipulation, and strategy, we shape you into someone who
                         dominates every challenge, without caring about being nice.</p>
                     <h1>Vision</h1>
-                    <p>Imagine a world where only the strongest call the shots. That's our vision for the future. We see
+                    <p style="text-align: justify;">Imagine a world where only the strongest call the shots. That's our vision for the future. We see
                         a place where power decides everything, and those who have it shape the world as they see fit.
                         Our graduates will lead this new world, using their smarts and strength to bend reality to their
                         will.</p>
                     <h1>Values</h1>
-                    <p><strong>Dominance</strong> <br>We believe in being the strongest, because that's how you win in
-                        life. We teach you
-                        to be powerful so you can control your destiny.
+                    <p style="text-align: justify;">
+                        <strong>Dominance</strong> <br>We believe in being the strongest, because that's how you win in
+                        life. We teach you to be powerful so you can control your destiny.
                         <br><br>
                         <strong>Ruthlessness</strong> <br>Sometimes being nice gets you nowhere. We show you how to be
-                        tough and make the
-                        tough choices, no matter what.
+                        tough and make the tough choices, no matter what.
                         <br><br>
                         <strong>Mastery</strong> <br>We expect you to be the best at everything you do. We push you to
-                        be better every
-                        day, so you can conquer any challenge that comes your way.
+                        be better every day, so you can conquer any challenge that comes your way.
                         <br><br>
                         <strong>Ambition</strong> <br>Dream big, because there are no limits here. We encourage you to
-                        reach for the
-                        stars and never settle for less.
+                        reach for the stars and never settle for less.
                         <br><br>
-                        <strong>Loyalty</strong><br> Stick with us, and we'll help you reach the top. We're all in this
-                        together, working
-                        towards the same goal of being the best.
+                        <strong>Loyalty</strong> <br>Stick with us, and we'll help you reach the top. We're all in this
+                        together, working towards the same goal of being the best.
                     </p>
                 </section>
             </div>
-
 
             <div id="gallery" style="background-color: red;">
                 <div class="photo-gallery">
@@ -145,6 +176,7 @@
                     </section>
                 </div>
             </div>
+
             <div class="feature-selection">
                 <h1>Feature Events And Programs</h1>
                 <div class="feature-wrapper">
@@ -159,118 +191,126 @@
 
             <div id="teachers-and-deans">
                 <div style="border: 1px solid black; display: flex; flex-direction: row;">
-                    <section
-                        style="width: 50%; height: 100%; background-image: url('images/student.jpeg'); background-size:cover; background-repeat: no-repeat;">
-
-                    </section>
-                    <section
-                        style=" width: 50%; height: 100%; background-color: red; display: flex; flex-direction: column; padding: 32px; align-items: center;">
+                    <section style="width: 50%; height: 100%; background-image: url('images/student.jpeg');"></section>
+                    <section 
+                        style="width: 50%; height: 100%; background-color: red; display: flex; flex-direction: column; padding: 32px; align-items: center;">
                         <h1 style="font-size: 2.5vw;">Title</h1>
                         <div style="display: flex; flex-direction: column; gap: 64px; font-size: 18px;">
-                            <section style="display: flex; justify-content: center; align-items: center; gap: 16px;">
-                                <img src="" alt="" width="50px" height="50px">
-                                <p>
-                                    Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
-                                    semper
-
-                                </p>
+                            <section>
+                                <img src="" alt="">
+                                <p>Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
+                                    semper</p>
                             </section>
-                            <section style="display: flex; justify-content: center; align-items: center; gap: 16px;">
-                                <img src="" alt="" width="50px" height="50px">
-                                <p>
-                                    Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
-                                    semper
-
-                                </p>
+                            <section>
+                                <img src="" alt="">
+                                <p>Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
+                                    semper</p>
                             </section>
-                            <section style="display: flex; justify-content: center; align-items: center; gap: 16px;">
-                                <img src="" alt="" width="50px" height="50px">
-                                <p>
-                                    Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
-                                    semper
-
-                                </p>
+                            <section>
+                                <img src="" alt="">
+                                <p>Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
+                                    semper</p>
                             </section>
-                            <section style="display: flex; justify-content: center; align-items: center; gap: 16px;">
-                                <img src="" alt="" width="50px" height="50px">
-                                <p>
-                                    Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
-                                    semper
-
-                                </p>
+                            <section>
+                                <img src="" alt="">
+                                <p>Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
+                                    semper</p>
                             </section>
-                            <section style="display: flex; justify-content: center; align-items: center; gap: 16px;">
-                                <img src="" alt="" width="50px" height="50px">
-                                <p>
-                                    Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
-                                    semper
-
-                                </p>
+                            <section>
+                                <img src="" alt="">
+                                <p>Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
+                                    semper</p>
                             </section>
-                            <section style="display: flex; justify-content: center; align-items: center; gap: 16px;">
-                                <img src="" alt="" width="50px" height="50px">
-                                <p>
-                                    Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
-                                    semper
-
-                                </p>
+                            <section>
+                                <img src="" alt="">
+                                <p>Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
+                                    semper</p>
                             </section>
-                            <section style="display: flex; justify-content: center; align-items: center; gap: 16px;">
-                                <img src="" alt="" width="50px" height="50px">
-                                <p>
-                                    Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
-                                    semper
-
-                                </p>
+                            <section>
+                                <img src="" alt="">
+                                <p>Praesent tempor leo at scelerisque tincidunt. Aenean quis est quis ante suscipit
+                                    semper</p>
                             </section>
                         </div>
                     </section>
                 </div>
-
             </div>
 
-
-
-            <div > 
-                <div style="height: 25vw; border: 1px solid black;">
+            <div class="full-width-section">
+                <div class="full-width-section-wrapper">
                     <a href="enroll-now.html" class="enroll-button">ENROLL NOW</a>
                 </div>
-            </div>
 
+            </div>
         </div>
     </main>
-    <footer></footer>
+    <footer >
+        <div class="container">
+            <div class="col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>123 University St., City, State, 12345</li>
+                    <li>Phone: (123) 456-7890</li>
+                    <li>Email: info@university.edu</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Social Media</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col copyright">
+                <p>&copy; 2024 University Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        let images = ["images/1.png", "images/2.webp", "images/3.avif", "images/4.jpg"];
+        let collection = document.getElementsByClassName("feature-item");
+
+        function drawImage(array) {
+            for (let i = 0; i < collection.length; i++) {
+                collection[i].style.backgroundImage = "url(" + images[i] + ")";
+            }
+        }
+
+        function next() {
+            let head = images[0];
+            for (let i = 0; i < images.length - 1; i++) {
+                images[i] = images[i + 1];
+            }
+            images[images.length - 1] = head;
+            drawImage(images);
+        }
+
+        function prev() {
+            let tail = images[images.length - 1];
+            for (let i = images.length - 1; i >= 0; i--) {
+                images[i] = images[i - 1];
+            }
+            images[0] = tail;
+            drawImage(images);
+        }
+
+        drawImage(images);
+    </script>
 </body>
-<script>
-    let images = ["images/1.png", "images/2.webp", "images/3.avif", "images/4.jpg"];
-    let collection = document.getElementsByClassName("feature-item");
-
-    drawImage(images);
-
-    function next() {
-        let head = images[0];
-        for (let i = 0; i < images.length - 1; i++) {
-            images[i] = images[i + 1];
-        }
-        images[images.length - 1] = head;
-        console.log(images);
-        drawImage(images);
-    }
-    function prev() {
-        let tail = images[images.length - 1];
-        for (let i = images.length - 1; i >= 0; i--) {
-            images[i] = images[i - 1];
-        }
-        images[0] = tail;
-        console.log(images);
-        drawImage(images);
-    }
-
-    function drawImage(array) {
-        for (let i = 0; i < collection.length; i++) {
-            collection[i].style.backgroundImage = "url(" + images[i] + ")";
-        }
-    }
-</script>
 
 </html>
