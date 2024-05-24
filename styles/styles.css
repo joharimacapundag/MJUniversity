@@ -55,13 +55,6 @@ main .wrapper div>div {
     align-items: center;
 }
 
-.photo-gallery-wrapper {
-    width: 50%;
-    height: 5.208vw;
-    padding: 0.833vw;
-}
-
-
 main .wrapper div .overlay {
     position: absolute;
     width: 100%;
@@ -130,10 +123,11 @@ main .wrapper .feature-selection .feature-wrapper .feature-item {
     align-items: center;
     font-size: 2vw;
     cursor: pointer;
-    background-image: url('/images/profile-circle.svg');
+    background-image: url('/images/arcane-research-library.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 main .wrapper .feature-selection .feature-wrapper .feature-item:hover {
     background-color: #660000;
@@ -156,6 +150,7 @@ main .wrapper .feature-selection .feature-wrapper .feature-item:disabled {
     cursor: not-allowed;
     box-shadow: none;
 }
+
 main .wrapper .feature-selection .feature-wrapper a:hover {
     background-color: rgba(139, 33, 33, 1);
     color: white;
@@ -344,10 +339,11 @@ button:disabled {
     background-repeat: no-repeat;
 }
 
-.photo-gallery-wrapper img {
-    width: 5.208vw;
-    height: 5.208vw;
-}
+.photo-gallery {}
+
+.photo-gallery-wrapper {}
+
+.photo-gallery-wrapper-container {}
 
 .pros section {
     display: flex;
@@ -361,14 +357,36 @@ button:disabled {
     height: 2.604vw;
 }
 
+.pros-left {
+    width: 50%;
+    height: 100%;
+    background-image: url('/images/student.jpeg');
+}
+
+.pros-right {
+    width: 50%;
+    height: 100%;
+    background-color: #8B0000;
+    display: flex;
+    flex-direction: column;
+    padding: 1.667vw;
+    align-items: center;
+    background-color: white;
+}
+.pros-right h1{
+    color: #8B0000;
+}
+
 .feature-wrapper button {
     cursor: pointer;
 }
+
 
 .full-width-section {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: lightgray;
 }
 
 .feature-images {
@@ -378,23 +396,48 @@ button:disabled {
     width: 100%;
     height: 100%;
     gap: 1.667vw;
-   
-
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .feature-images .feature-images-item {
     background-color: #8B0000;
     width: 20%;
     height: 35vw;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
 }
+
+.feature-images-item:hover .feature-images-item-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.667vw;
+    transition-delay: 1s;
+}
+
+.feature-images-item:hover .feature-images-item-overlay h1 {
+    position: relative;
+    top: 3vw;
+    color: #8B0000;
+}
+
+.feature-images-item-overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.747);
+}
+
 
 .feature-images .feature-images-item .feature-images-item-large {
     width: 100%;
     height: 70%;
     background-color: lightgray;
-    
-
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .feature-images .feature-images-item .feature-images-item-small {
     width: 100%;
@@ -422,9 +465,9 @@ button:disabled {
 .academics-wrapper .academics-wrapper-item-b {
     width: 50%;
     height: 100%;
-    background-color:#8B0000;
+    background-color: #8B0000;
 }
 
-.more-academics{
+.more-academics {
     background-color: lightgray;
 }
