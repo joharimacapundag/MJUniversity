@@ -2,7 +2,7 @@
 nav {
     width: 100%;
     padding-top: 4.7vw;
-    background-color: rgba(0, 0, 0, 0.418);
+    background-color: rgb(32, 32, 32);
     position: fixed;
     top: 0;
     /*box-shadow: 0px 2px 5px black;*/
@@ -19,7 +19,6 @@ nav .nav-wrapper{
     flex-direction: row;
     justify-content: space-between;
 
-    
 }
 
 nav .logo-container{
@@ -40,7 +39,7 @@ nav .logo-container{
 nav .logo-container div{
     width:  1.5vw;
     padding: 1.5vw;
-    background-image: url("/images/logo.webp");
+    background-image: url("/images/logo.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -66,6 +65,6 @@ nav .nav-items a{
 }
 
 nav .nav-items a:hover{
-    background-color:cadetblue;
+    background-color:#660000;
 
 }

@@ -1,6 +1,28 @@
+* {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    letter-spacing: 0.13vw;
+}
+
+@font-face {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    src: url("fonts\\BebasNeue-Regular.ttf");
+}
+
 main {
     /*margin-top: 4.7vw;*/
 
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0.417vw;
 }
 
 main .wrapper {
@@ -35,8 +57,8 @@ main .wrapper div>div {
 
 .photo-gallery-wrapper {
     width: 50%;
-    height: 100px;
-    border: 1px solid black;
+    height: 5.208vw;
+    padding: 0.833vw;
 }
 
 
@@ -63,12 +85,6 @@ main .wrapper div #welcome-wrapper,
 }
 
 
-main .wrapper div #history {
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
 
 main .wrapper div #history {
     padding: 2vw;
@@ -76,7 +92,7 @@ main .wrapper div #history {
 }
 
 .background-image {
-    background-image: url('images/student.jpeg');
+    background-image: url('../images/student.jpeg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -84,7 +100,6 @@ main .wrapper div #history {
 }
 
 main .wrapper .feature-selection {
-    background-color: aqua;
     padding-top: 20vw;
     display: flex;
     flex-direction: column;
@@ -94,7 +109,7 @@ main .wrapper .feature-selection {
 
 main .wrapper .feature-selection h1 {
     position: absolute;
-    top: 0;
+    top: 1.5vw;
     font-size: 2vw;
 }
 
@@ -105,7 +120,9 @@ main .wrapper .feature-selection .feature-wrapper {
 }
 
 main .wrapper .feature-selection .feature-wrapper .feature-item {
-    border: 1px solid black;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 10.417vw;
     height: 10.417vw;
     display: flex;
@@ -118,30 +135,58 @@ main .wrapper .feature-selection .feature-wrapper .feature-item {
     background-size: cover;
 }
 
+main .wrapper .feature-selection .feature-wrapper .feature-item:hover {
+    background-color: #660000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+main .wrapper .feature-selection .feature-wrapper .feature-item:active {
+    background-color: #4B0000;
+    transform: translateY(0);
+}
+
+main .wrapper .feature-selection .feature-wrapper .feature-item:focus {
+    outline: none;
+}
+
+main .wrapper .feature-selection .feature-wrapper .feature-item:disabled {
+    background-color: #333333;
+    color: #CCCCCC;
+    cursor: not-allowed;
+    box-shadow: none;
+}
 main .wrapper .feature-selection .feature-wrapper a:hover {
     background-color: rgba(139, 33, 33, 1);
     color: white;
 }
 
-main .wrapper #gallery .photo-gallery .photo-gallery-wrapper {
-    width: 100%;
-    height: 100%;
+
+
+#mission-vision-values {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    column-gap: 0.208vw;
-    row-gap: 0;
+    position: relative;
+    height: auto;
+    padding: 0.833vw;
+    background-color: lightgray;
 }
 
-main .wrapper #gallery .photo-gallery .photo-gallery-wrapper img {
-    width: calc(4.219vw * 3.618);
-    height: calc(7.5vw * 3.618);
+#mission-vision-values section {
+    width: 100%;
+    max-width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.667vw;
+    padding: 0.833vw;
+    box-sizing: border-box;
 }
+
 
 .enroll-content {
-    background-color: aqua;
     padding-top: 10vw;
     display: flex;
     flex-direction: column;
@@ -150,7 +195,7 @@ main .wrapper #gallery .photo-gallery .photo-gallery-wrapper img {
 }
 
 footer {
-    background-color: #2c3e50;
+    background-color: #660000;
     color: white;
     padding: 20px 0;
 }
@@ -170,7 +215,7 @@ footer .col {
 }
 
 footer h3 {
-    border-bottom: 2px solid #3498db;
+    border-bottom: 2px solid white;
     padding-bottom: 0.521vw;
 }
 
@@ -193,7 +238,7 @@ footer ul li a:hover {
 }
 
 footer .social-icons a {
-    margin-right: 10px;
+    margin-right: 0.521vw;
     color: white;
     font-size: 1.042vw;
     text-decoration: none;
@@ -208,15 +253,178 @@ footer .copyright {
     margin-top: 1.042vw;
 }
 
-table{
+table {
     border: 1px solid black;
-    font-size: 1.2vw;
-    padding: 0;
-    margin: 0;
+    font-size: 0.938vw;
+    border-collapse: collapse;
 }
-th{
+
+th {
     border: 1px solid black;
+    padding: 0.208vw;
+    font-size: larger;
+    color: #e0d2d2;
+    background-color: #8B0000;
 }
-td{
+
+td {
     border: 1px solid black;
+    padding: 0.417vw;
+}
+
+td:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #8B0000;
+    text-decoration-thickness: 0.208vw;
+}
+
+button {
+    display: inline-block;
+    padding: 0.625vw 1.25vw;
+    font-size: 0.833vw;
+    font-weight: bold;
+    color: #FFFFF0;
+    background-color: #8B0000;
+    border: 1px solid gray;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #660000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    background-color: #4B0000;
+    transform: translateY(0);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:disabled {
+    background-color: #333333;
+    color: #CCCCCC;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+
+.enroll-button {
+    display: flex;
+    width: 25vw;
+    height: 5vw;
+    margin-bottom: 1.042vw;
+    padding: 0.521vw 0.781vw;
+    background-color: #8B0000;
+    color: #fff;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.enroll-button:hover {
+    background-color: #660000;
+}
+
+.background-image {
+    background-image: url('images/student.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo-gallery-wrapper img {
+    width: 5.208vw;
+    height: 5.208vw;
+}
+
+.pros section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.833vw;
+}
+
+.pros img {
+    width: 2.604vw;
+    height: 2.604vw;
+}
+
+.feature-wrapper button {
+    cursor: pointer;
+}
+
+.full-width-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 1.667vw;
+   
+
+}
+
+.feature-images .feature-images-item {
+    background-color: #8B0000;
+    width: 20%;
+    height: 35vw;
+}
+
+.feature-images .feature-images-item .feature-images-item-large {
+    width: 100%;
+    height: 70%;
+    background-color: lightgray;
+    
+
+}
+
+.feature-images .feature-images-item .feature-images-item-small {
+    width: 100%;
+    height: 30%;
+}
+
+#academics {
+    padding-top: 31.25vw;
+}
+
+.academics-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.academics-wrapper .academics-wrapper-item-a {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.academics-wrapper .academics-wrapper-item-b {
+    width: 50%;
+    height: 100%;
+    background-color:#8B0000;
+}
+
+.more-academics{
+    background-color: lightgray;
 }
