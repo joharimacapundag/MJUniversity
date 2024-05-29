@@ -249,13 +249,12 @@ footer .copyright {
 }
 
 table {
-    border: 1px solid black;
     font-size: 0.938vw;
     border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.555);
 }
 
 th {
-    border: 1px solid black;
     padding: 0.208vw;
     font-size: larger;
     color: #e0d2d2;
@@ -264,7 +263,7 @@ th {
 
 td {
     border: 1px solid black;
-    padding: 0.417vw;
+    padding:0.521vw;
     background-color: white;
 }
 
@@ -480,7 +479,8 @@ strong {
 }
 
 .more-academics {
-    background-color: lightgray;
+    background-image: url(/images/tour-2.png);
+    background-size: cover;
 }
 
 .video-container {
@@ -569,12 +569,10 @@ strong {
     padding: 0.833vw;
     flex-direction: column;
     gap: 0.833vw;
-    
-}
-
-.news-container-left-intro {
 
 }
+
+.news-container-left-intro {}
 
 .news-container-left-info-container {
     width: 70%;
@@ -599,25 +597,176 @@ strong {
     justify-content: center;
 }
 
-.news-pagination{
+.news-pagination {
     width: 70%;
     align-self: center;
     display: flex;
     gap: 0.417vw;
 }
 
-.contacts-container{
+.contacts-container {
     display: flex;
     width: 100%;
 }
-.contacts-left{
+
+.contacts-left {
     width: 50%;
     height: 100%;
     background-image: url(/images/contacts.webp);
     background-size: cover;
     background-position: 75%;
 }
-.contacts-right{
+
+.contacts-right {
     width: 50%;
     height: 100%;
+}
+
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    gap: 1.667vw;
+}
+
+.card-gallery-wrapper {
+    flex-direction: column;
+}
+
+.card-gallery-wrapper {}
+
+.h1-header {
+    position: relative;
+    top: 10.5vw;
+    font-size: 3.333vw;
+}
+
+.card-container {
+    width: 20%;
+    height: 60%;
+    background-color:#4B0000;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image-content {
+    width: 100%;
+    height: 80%;
+    background-color: lightgray;
+}
+
+.card-image-info-content {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.417vw;
+    padding: 0.833vw;
+
+}
+.card-image-info-content h1{
+    font-size: 0.938vw;
+    color: white;
+
+    
+}
+.card-image-info-content p{
+    text-align: justify;
+    color: wheat;
+    font-size: 0.729vw;
+}
+.card-overlay {
+    position: absolute;
+    width: 20%;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.788);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    font-size: 3.333vw;
+    color: #8B0000;
+}
+
+.card-overlay:hover {
+    opacity: 1;
+
+}
+
+.tour {}
+
+.tour-gallery-wrapper {
+    display: flex;
+    background-color: #131313;
+}
+
+.tour-gallery-container {
+    width: 70%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tour-overview-image {
+    flex: 2;
+    background-color: white;
+
+}
+
+
+.tour-overview-detail {
+    flex: 1;
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    padding: 2.188vw;
+}
+
+p{
+    margin: 0;
+}
+
+.tour-overview-detail-info{
+    display: flex;
+    gap: 1.667vw;
+    border-bottom: 0.208vw solid #8B0000;
+    height: fit-content;
+    padding: 1.667vw;
+
+}
+
+.tour-overview-detail-info h1{
+    flex: 1;
+    font-size: 3.333vw;
+    color: white;
+}
+.tour-overview-detail-info img{
+    height: 15vw;
+    flex: 1;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+.tour-overview-detail-info img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.tour-overview-detail-info p{
+    flex: 1;
+    font-size:0.938vw;
+    color: lightgray;
+
+}
+
+.custom-left-container{
+    width: 75%;
+    height: 75%;
+    background-color: #8B0000;
 }

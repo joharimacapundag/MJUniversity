@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <nav>
         <div class="nav-wrapper">
@@ -68,56 +69,46 @@
                 </section>
             </div>
 
-            <div class="photo-gallery">
-                <div class="photo-gallery-wrapper">
-                    <div class="photo-gallery-wrapper-container"
-                        style="display: flex; flex-direction: column; gap: 16px; align-items: center;">
-                        <h1 style="margin: 0; padding: 0; position: relative; top: 6vw; font-size: 2.188vw;">Photo
-                            Gallery</h1>
-                        <section class="feature-images">
-                            <div class="feature-images-item">
-                                <section class="feature-images-item-large">
-                                    <div class="feature-images-item-overlay">
-                                        <h1>Check it out</h1>
-                                    </div>
-                                </section>
-                                <section class="feature-images-item-small">
-                                    <div class="feature-images-item-overlay"></div>
-                                </section>
-                            </div>
-                            <div class="feature-images-item">
-                                <section class="feature-images-item-large">
-                                    <div class="feature-images-item-overlay">
-                                        <h1>Check it out</h1>
-                                    </div>
-                                </section>
-                                <section class="feature-images-item-small">
-                                    <div class="feature-images-item-overlay"></div>
-                                </section>
-                            </div>
-                            <div class="feature-images-item">
-                                <section class="feature-images-item-large">
-                                    <div class="feature-images-item-overlay">
-                                        <h1>Check it out</h1>
-                                    </div>
-                                </section>
-                                <section class="feature-images-item-small">
-                                    <div class="feature-images-item-overlay"></div>
-                                </section>
-                            </div>
-                            <div class="feature-images-item">
-                                <section class="feature-images-item-large">
-                                    <div class="feature-images-item-overlay">
-                                        <h1>Check it out</h1>
-                                    </div>
-                                </section>
-                                <section class="feature-images-item-small">
-                                    <div class="feature-images-item-overlay"></div>
-                                </section>
-                            </div>
+            <div class="card-gallery">
+                <div class="card-gallery-wrapper">
+                    <section class="card">
+                        <section class="card-container">
+                            <section class="card-image-content">
+                                <div class="card-overlay">
+                                    <h1>CHECK IT OUT</h1>
+                                </div>
+                            </section>
+                            <section class="card-image-info-content">
+                            </section>
                         </section>
-                    </div>
-
+                        <section class="card-container">
+                            <section class="card-image-content">
+                                <div class="card-overlay">
+                                    <h1>CHECK IT OUT</h1>
+                                </div>
+                            </section>
+                            <section class="card-image-info-content">
+                            </section>
+                        </section>
+                        <section class="card-container">
+                            <section class="card-image-content">
+                                <div class="card-overlay">
+                                    <h1>CHECK IT OUT</h1>
+                                </div>
+                            </section>
+                            <section class="card-image-info-content">
+                            </section>
+                        </section>
+                        <section class="card-container">
+                            <section class="card-image-content">
+                                <div class="card-overlay">
+                                    <h1>CHECK IT OUT</h1>
+                                </div>
+                            </section>
+                            <section class="card-image-info-content">
+                            </section>
+                        </section>
+                    </section>
                 </div>
             </div>
 
@@ -261,7 +252,7 @@
             drawImage(images);
         }
 
-        
+
         function nextB() {
             let head = imagesB[0];
             for (let i = 0; i < imagesB.length - 1; i++) {

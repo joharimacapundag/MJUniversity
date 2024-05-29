@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Hover Overlay</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+    }
+
+    .card {
+        position: relative;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-info {
+        padding: 16px;
+        background-color: white;
+    }
+
+    .card-title {
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .card-description {
+        margin: 8px 0 0;
+        font-size: 14px;
+        color: #666;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .card:hover .overlay {
+        opacity: 1;
+    }
+
+    .overlay-text {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Card Image" class="card-img">
+            <div class="card-info">
+                <h3 class="card-title">Card Title</h3>
+                <p class="card-description">This is a description of the card. It provides more details about the
+                    content.</p>
+            </div>
+            <div class="overlay">
+                <div class="overlay-text">Overlay Text</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
